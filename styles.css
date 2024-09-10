@@ -28,3 +28,9 @@ p {
 #textParagrafSmall{
     background-color: red;
 }
+
+@media (max-width: 1250px) {
+    body {
+        background-color: red;
+    }    
+}
