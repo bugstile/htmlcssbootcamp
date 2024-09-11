@@ -6,7 +6,7 @@ html {
 }
 
 ul {
-    padding: 0;
+    padding: 10px;
     list-style:none;
 }
 
@@ -15,12 +15,13 @@ ul li a {
     font-weight: bold;
     color: #E5E9E2;
     text-decoration:none;
-    text-decoration:underline #BFBA7E;
+    text-decoration:underline #BFBA7E 6px;
+    margin: -6px;
 }
 
 ul li {
     display: inline;
-    padding: 10px;
+    padding: 20px;
 }
 
 body {
@@ -45,7 +46,7 @@ h1 {
 }
 
 section {
-    padding: 60px;
+    padding: 150px;
     line-height: 40px;
 }
 
@@ -62,4 +63,50 @@ footer {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+@media (max-width: 768px){
+    ul li a{
+        font-size: 26px;
+    }
+    ul {
+        line-height: 26px;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    section{
+        padding: 60px;
+    }
+}
+
+@media (min-width: 1200px){
+    .content {
+        display: flex;
+        padding: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+    .content p {
+        padding: 20px;
+    }
+
+    section h2{
+        padding: 20px;
+        text-align:center; 
+    }
+}
+
+@media (min-width: 1400px){
+    section{
+        padding-top:100px;
+        padding-bottom:100px;
+        padding-right:10%;
+        padding-left:10%;
+    }
+
+    section h2{
+        padding: 20px;
+        text-align:center; 
+    }
 }
